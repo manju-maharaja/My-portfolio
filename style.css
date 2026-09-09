@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f7ff;
+    color: #29263d;
+    line-height: 1.6;
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+nav {
+    background-color: #211b3a;
+    padding: 18px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    box-shadow: 0 2px 10px rgba(33, 27, 58, 0.15);
+}
+
+nav h2 {
+    color: white;
+}
+
+nav h2::first-letter {
+    color: #a78bfa;
+}
+
+nav a {
+    color: #e8e4f3;
+    text-decoration: none;
+    margin-left: 25px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c4b5fd;
+}
+
+
+/* ---------- HOME ---------- */
+
+.home {
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 10%;
+
+    background: linear-gradient(
+        120deg,
+        #eee9ff,
+        #f8f7ff
+    );
+}
+
+.home p {
+    max-width: 600px;
+    margin: 15px 0;
+    color: #5b5870;
+}
+
+.home h1 {
+    font-size: 55px;
+    color: #211b3a;
+
+    transition: 0.3s;
+}
+
+.home h1:hover {
+    color: #7c3aed;
+}
+
+.home h3 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #635b7a;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+.button {
+    display: inline-block;
+
+    background-color: #7c3aed;
+    color: white;
+
+    padding: 11px 20px;
+
+    text-decoration: none;
+    border-radius: 6px;
+
+    margin-top: 10px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #6d28d9;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 15px rgba(124, 58, 237, 0.25);
+}
+
+
+/* ---------- SECTIONS ---------- */
+
+section:not(.home) {
+    padding: 70px 10%;
+}
+
+section h2 {
+    color: #211b3a;
+    margin-bottom: 25px;
+
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    background-color: #8b5cf6;
+
+    margin-top: 7px;
+}
+
+/* ---------- EDUCATION ---------- */
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-box {
+    background-color: white;
+
+    padding: 25px;
+
+    border-left: 4px solid #7c3aed;
+    border-radius: 8px;
+
+    border-top: 1px solid #e2def0;
+    border-right: 1px solid #e2def0;
+    border-bottom: 1px solid #e2def0;
+
+    transition: 0.3s;
+}
+
+.education-box:hover {
+    transform: translateX(6px);
+
+    box-shadow: 0 6px 18px rgba(33, 27, 58, 0.12);
+
+    border-left-color: #a78bfa;
+}
+
+.education-box h3 {
+    color: #211b3a;
+    margin-bottom: 8px;
+}
+
+.education-box p {
+    color: #625d72;
+    margin: 4px 0;
+}
+
+.education-box b {
+    color: #7c3aed;
+}
+
+
+/* ---------- SKILLS ---------- */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills div {
+    background-color: white;
+
+    padding: 15px 25px;
+
+    border: 1px solid #ddd6fe;
+
+    border-radius: 7px;
+
+    color: #4c4664;
+
+    transition: 0.3s;
+}
+
+.skills div:hover {
+    background-color: #7c3aed;
+    color: white;
+
+    transform: translateY(-5px);
+
+    border-color: #7c3aed;
+
+    box-shadow: 0 6px 15px rgba(124, 58, 237, 0.2);
+}
+
+/* ---------- CERTIFICATES ---------- */
+
+.certificates {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.certificate-box {
+    background-color: white;
+
+    width: 30%;
+
+    padding: 25px;
+
+    border: 1px solid #e2def0;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.certificate-box:hover {
+    transform: translateY(-6px);
+
+    border-color: #a78bfa;
+
+    box-shadow: 0 8px 18px rgba(33, 27, 58, 0.12);
+}
+
+.certificate-box h3 {
+    color: #211b3a;
+    margin-bottom: 10px;
+}
+
+.certificate-box p {
+    color: #625d72;
+    margin: 5px 0;
+}
+
+.certificate-box a {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    color: #7c3aed;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.certificate-box a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- INTERNSHIP ---------- */
+
+.internships {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.internship-box {
+    background-color: white;
+
+    width: 47%;
+
+    padding: 25px;
+
+    border-left: 4px solid #7c3aed;
+
+    border-top: 1px solid #e2def0;
+    border-right: 1px solid #e2def0;
+    border-bottom: 1px solid #e2def0;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.internship-box:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 18px rgba(33, 27, 58, 0.12);
+}
+
+.internship-box h3 {
+    color: #211b3a;
+    margin-bottom: 12px;
+}
+
+.internship-box p {
+    color: #625d72;
+    margin: 7px 0;
+}
+
+.internship-box b {
+    color: #7c3aed;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    .certificate-box {
+        width: 100%;
+    }
+
+    .internship-box {
+        width: 100%;
+    }
+
+}
+
+
+/* ---------- PROJECTS ---------- */
+
+.projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: white;
+
+    width: 30%;
+
+    padding: 25px;
+
+    border: 1px solid #e2def0;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-7px);
+
+    border-color: #a78bfa;
+
+    box-shadow: 0 8px 20px rgba(33, 27, 58, 0.12);
+}
+
+.project h3 {
+    color: #7c3aed;
+
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-bottom: 10px;
+
+    color: #625d72;
+}
+
+
+/* ---------- CONTACT ---------- */
+
+#contact {
+    background-color: #eee9ff;
+}
+
+#contact a {
+    color: #7c3aed;
+
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    text-align: center;
+
+    background-color: #211b3a;
+
+    color: #ddd8eb;
+
+    padding: 20px;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .home {
+        padding: 70px 8%;
+    }
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .home h3 {
+        font-size: 20px;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    section:not(.home) {
+        padding: 55px 8%;
+    }
+}
