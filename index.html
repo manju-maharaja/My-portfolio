@@ -3,230 +3,816 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Manju M - Portfolio</title>
+    <title>Manju M | Aspiring Software Engineer & Full-Stack Developer</title>
+    <meta name="description" content="Portfolio of Manju M - Computer Science Engineering Student, Full-Stack Developer & Java Programmer. Seeking Software Engineering and Full-Stack roles.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <h2> Manju M</h2>
+    <!-- Background Ambient Glows -->
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
 
-        <div>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
+    <!-- Navigation Bar -->
+    <header class="navbar-wrapper">
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span><span class="logo-text">Manju.M</span><span class="logo-bracket">/&gt;</span>
+            </a>
 
-
-    <!-- Home -->
-    <section id="home" class="home">
-
-        <div>
-            <p>Hello, I'm</p>
-
-            <h1>Manju M</h1>
-
-            <h3>Computer Science Engineering Student</h3>
-
-            <p>
-                I am interested in software development and web technologies.
-                Currently, I am improving my Java and problem-solving skills.
-            </p>
-
-            <a href="#projects" class="button">View My Projects</a>
-        </div>
-
-    </section>
-
-
-    <!-- About -->
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            I am a Computer Science Engineering student who enjoys learning
-            programming and developing simple applications. I am currently
-            focusing on Java, web development and problem solving.
-        </p>
-
-        <p>
-            My goal is to become a software developer and improve my technical
-            skills through projects and practical experience.
-        </p>
-
-    </section>
-
-    <!-- Education -->
-
-<section id="education">
-
-    <h2>Education</h2>
-
-    <div class="education">
-
-        <div class="education-box">
-            <h3>BE Computer Science Engineering</h3>
-            <p>V.S.B College of Engineering Technical Campus</p>
-            <p>2024- 2028</p>
-            <p><b>CGPA:</b> 8.32/ 10</p>
-        </div>
-
-        <div class="education-box">
-            <h3>Higher Secondary (12th)</h3>
-            <p>Swamy Chidbhavananda Matric.Hr.Sec.School</p>
-            <p>2022 - 2024</p>
-            <p><b>Percentage:</b> 86%</p>
-        </div>
-
-        <div class="education-box">
-            <h3>SSLC (10th)</h3>
-            <p>Swamy Chidbhavananda Matric.Hr.Sec.School</p>
-            <p>2020 - 2021</p>
-            <p><b>Percentage:</b> 89.6%</p>
-        </div>
-
-    </div>
-
-</section>
-
-
-    <!-- Skills -->
-    <section id="skills">
-
-        <h2>Skills</h2>
-
-        <div class="skills">
-
-            <div>Java</div>
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JavaScript</div>
-             <div>Communication</div>
-
-        </div>
-
-    </section>
-
-    <!-- Certificates -->
-
-<section id="certificates">
-
-    <h2>Certificates</h2>
-
-    <div class="certificates">
-
-        <div class="certificate-box">
-            <h3>Java Programming</h3>
-        <p>  Certification in Programming in Java
-NPTEL, scored 83% (Silver Elite)</p>
-            <p>2025</p>
-        </div>
-
-        <div class="certificate-box">
-            <h3>Web Development</h3>
-            <p>Internship in Basics of Full Stack Web Development and Canva Design
-Pantech Solution</p>
-            <p>2025</p>
-        </div>
-
-        <div class="certificate-box">
-            <h3>Internship</h3>
-            <p>Completed Internship entitled "Web Development"
-NxtLogic Solution</p>
-            <p>2026</p>
-        </div>
-
-    </div>
-   
-
-</section>
-
-
-    <!-- Projects -->
-    <section id="projects">
-
-        <h2>Projects</h2>
-
-        <div class="projects">
-
-            <div class="project">
-                <h3>INTIMA-X</h3>
-
-                <p>
-                    A smart notification management system that helps users
-                    organize notifications based on their importance.
-                </p>
-
-                <p><b>Technologies:</b> HTML, CSS, JavaScript</p>
+            <!-- Status Pill -->
+            <div class="status-badge hide-mobile">
+                <span class="status-dot"></span>
+                <span>Open to SDE Roles & Internships</span>
             </div>
 
-
-            <div class="project">
-                <h3>JANASEVA AI</h3>
-
-                <p>
-                    An AI-based project concept that helps analyze complaints
-                    and prioritize government resources.
-                </p>
-
-                <p><b>Technologies:</b> AI, Python, Web Technologies</p>
+            <!-- Nav Links -->
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="resume/resume.pdf" target="_blank" download="Manju_M_Resume.pdf" class="btn btn-outline nav-resume-btn resume-download-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Resume
+                </a>
             </div>
 
+            <!-- Hamburger Button for Mobile -->
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </header>
 
-            <div class="project">
-                <h3>Java Problem Solving</h3>
+    <!-- Main Content -->
+    <main>
 
-                <p>
-                    Practicing programming problems using Java and improving
-                    data structures and algorithm skills.
-                </p>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-profile-top">
+                        <div class="hero-avatar-wrapper">
+                            <img src="images/profile.png" alt="Manju M" class="hero-avatar-img">
+                            <span class="avatar-online-dot" title="Available for Opportunities"></span>
+                        </div>
+                        <div class="hero-badge">
+                            <span class="badge-icon">⚡</span>
+                            <span>Computer Science & Engineering • Batch 2024-2028</span>
+                        </div>
+                    </div>
 
-                <p><b>Technologies:</b> Java, DSA</p>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Manju M</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Aspiring Software Engineer & Full-Stack Developer
+                    </p>
+
+                    <p class="hero-description">
+                        Computer Science Engineering student passionate about crafting high-performance web applications and solving complex algorithmic challenges. Proficient in <strong>Java</strong>, <strong>React</strong>, <strong>Spring Boot</strong>, and <strong>MySQL</strong> with hands-on internship experience.
+                    </p>
+
+                    <!-- Quick Metrics Strip -->
+                    <div class="hero-metrics">
+                        <div class="metric-card">
+                            <span class="metric-val">8.32</span>
+                            <span class="metric-lbl">Current CGPA</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-val">83%</span>
+                            <span class="metric-lbl">NPTEL Silver Elite</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-val">SIH</span>
+                            <span class="metric-lbl">Smart India Hackathon</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                        <a href="resume/resume.pdf" target="_blank" download="Manju_M_Resume.pdf" class="btn btn-secondary resume-download-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            <span>Download Resume</span>
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">
+                            <span>Let's Talk</span>
+                        </a>
+                    </div>
+
+                    <!-- Social / Profile Quick Links -->
+                    <div class="hero-socials">
+                        <a href="https://github.com/manju-maharaja" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/manju-m-36447a3a8/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://leetcode.com/u/Manju__M/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LeetCode Profile">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.607 2.66 2.66 0 0 1 .388-.392l4.255-4.556a1.377 1.377 0 0 0 .004-1.954l-1.397-1.397a1.374 1.374 0 0 0-.987-.404zm3.626 7.422a1.38 1.38 0 0 0-.979.404l-4.125 4.125a1.38 1.38 0 0 0 0 1.954l4.125 4.125a1.38 1.38 0 0 0 1.954-1.954l-3.148-3.148 3.148-3.148a1.38 1.38 0 0 0-.974-2.358z"/></svg>
+                            <span>LeetCode</span>
+                        </a>
+                        <a href="mailto:manju18022007@gmail.com" class="social-icon-btn" title="Email Manju">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Interactive Visual Card -->
+                <div class="hero-visual">
+                    <div class="dev-card">
+                        <div class="dev-card-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                            <span class="file-name">developer_profile.java</span>
+                        </div>
+                        <div class="dev-card-body">
+                            <pre><code><span class="syn-keyword">class</span> <span class="syn-class">SoftwareEngineer</span> {
+    <span class="syn-keyword">String</span> name = <span class="syn-str">"Manju M"</span>;
+    <span class="syn-keyword">String</span> degree = <span class="syn-str">"B.E. CSE (2024-2028)"</span>;
+    <span class="syn-keyword">double</span> cgpa = <span class="syn-num">8.32</span>;
+    <span class="syn-keyword">String</span> location = <span class="syn-str">"Coimbatore, India"</span>;
+    
+    <span class="syn-keyword">String</span>[] coreStack = {
+        <span class="syn-str">"Java"</span>, <span class="syn-str">"Python"</span>, <span class="syn-str">"React"</span>, 
+        <span class="syn-str">"Spring Boot"</span>, <span class="syn-str">"MySQL"</span>, <span class="syn-str">"DSA"</span>
+    };
+
+    <span class="syn-keyword">boolean</span> openForRoles = <span class="syn-bool">true</span>;
+}</code></pre>
+                        </div>
+                        <div class="dev-card-footer">
+                            <span class="pulse-indicator"></span>
+                            <span>Ready to contribute to software solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <span class="section-tag">Profile Overview</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-bar"></div>
             </div>
 
+            <div class="about-grid">
+                <div class="about-card narrative-card">
+                    <h3>Engineering Mindset & Career Objective</h3>
+                    <p>
+                        I am an aspiring software professional pursuing my <strong>B.E. in Computer Science and Engineering</strong> at <strong>V.S.B. College of Engineering Technical Campus</strong>, Coimbatore. 
+                    </p>
+                    <p>
+                        My objective is to begin my career by applying my computer science knowledge and programming skills to develop high-quality software solutions. I am deeply committed to continuously learning emerging technologies, architecting reliable systems, and contributing meaningfully to organizational growth.
+                    </p>
+                    <p>
+                        With a strong background in <strong>Java</strong>, <strong>Object-Oriented Design</strong>, and modern <strong>Full-Stack Web Development</strong>, I thrive at the intersection of logical problem solving and practical software implementation.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-bullet">✓</span>
+                            <span>Dedicated problem solver actively practicing algorithmic challenges on LeetCode</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-bullet">✓</span>
+                            <span>Certified in Programming in Java by NPTEL with Silver Elite classification (83%)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-bullet">✓</span>
+                            <span>Practical corporate exposure via internships at NxtLogic Solutions & Pantech Solutions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-card info-card">
+                    <h3>Quick Details</h3>
+                    <ul class="info-list">
+                        <li>
+                            <span class="info-label">Degree</span>
+                            <span class="info-val">B.E. Computer Science & Eng.</span>
+                        </li>
+                        <li>
+                            <span class="info-label">Institution</span>
+                            <span class="info-val">V.S.B. College of Eng. Tech Campus</span>
+                        </li>
+                        <li>
+                            <span class="info-label">Academic Score</span>
+                            <span class="info-val highlight-val">CGPA: 8.32 / 10</span>
+                        </li>
+                        <li>
+                            <span class="info-label">Location</span>
+                            <span class="info-val">Coimbatore, Tamil Nadu, India</span>
+                        </li>
+                        <li>
+                            <span class="info-label">Email</span>
+                            <a href="mailto:manju18022007@gmail.com" class="info-val link-val">manju18022007@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="info-label">Phone</span>
+                            <a href="tel:+919025925528" class="info-val link-val">+91 90259 25528</a>
+                        </li>
+                        <li>
+                            <span class="info-label">Soft Skills</span>
+                            <span class="info-val">Communication, Teamwork, Self-learning</span>
+                        </li>
+                    </ul>
+
+                    <div class="info-actions">
+                        <button class="btn btn-sm btn-outline copy-email-btn" data-email="manju18022007@gmail.com">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                            <span class="copy-text">Copy Email Address</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <span class="section-tag">Competencies</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Category 1: Programming Languages -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <div class="skill-pill primary">
+                            <span class="pill-name">Java</span>
+                            <span class="pill-desc">Core Java, OOP, Collections</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-name">Python</span>
+                            <span class="pill-desc">Scripting, Logic, AI concepts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Full-Stack Web Technologies -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <h3>Full-Stack & Web Technologies</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <div class="skill-pill primary">
+                            <span class="pill-name">React</span>
+                            <span class="pill-desc">Frontend UI, Components</span>
+                        </div>
+                        <div class="skill-pill primary">
+                            <span class="pill-name">Spring Boot</span>
+                            <span class="pill-desc">Backend Services, REST APIs</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-name">MySQL</span>
+                            <span class="pill-desc">Relational Databases & Queries</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-name">HTML5 / CSS3</span>
+                            <span class="pill-desc">Semantic, Responsive UI</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-name">JavaScript</span>
+                            <span class="pill-desc">DOM Manipulation, ES6+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3: Developer Tools & Environments -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3>Developer Tools</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <div class="skill-pill">
+                            <span class="pill-name">Git & GitHub</span>
+                            <span class="pill-desc">Version Control & Collaboration</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-name">Visual Studio Code</span>
+                            <span class="pill-desc">Primary Development IDE</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-name">Canva</span>
+                            <span class="pill-desc">Visual Assets & UI Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 4: Professional & Soft Skills -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <h3>Core Engineering & Soft Skills</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <div class="skill-pill">
+                            <span class="pill-name">Good Communication</span>
+                            <span class="pill-desc">Clear articulation & tech reporting</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-name">Teamwork & Collaboration</span>
+                            <span class="pill-desc">Hackathons & pair programming</span>
+                        </div>
+                        <div class="skill-pill">
+                            <span class="pill-name">Self-Learning</span>
+                            <span class="pill-desc">Rapid adoption of new tech stacks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Internships Section -->
+        <section id="experience" class="section">
+            <div class="section-header">
+                <span class="section-tag">Work Experience</span>
+                <h2 class="section-title">Internships & Practical Training</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Internship 1: NxtLogic Solutions -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta">
+                            <span class="timeline-badge">Internship</span>
+                            <span class="timeline-date">8th June 2026 – 7th July 2026</span>
+                        </div>
+                        <h3 class="timeline-role">Web Development Intern</h3>
+                        <h4 class="timeline-company">NxtLogic Solutions</h4>
+                        <p class="timeline-desc">
+                            Completed an intensive professional internship focused on corporate web application architecture, front-end optimization, and full development lifecycle execution.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tech-tag">Web Development</span>
+                            <span class="tech-tag">Frontend Architecture</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship 2: Pantech Solutions -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta">
+                            <span class="timeline-badge">Internship</span>
+                            <span class="timeline-date">May 2025 – June 2025</span>
+                        </div>
+                        <h3 class="timeline-role">Full Stack Web Development & Canva Design Intern</h3>
+                        <h4 class="timeline-company">Pantech Solutions</h4>
+                        <p class="timeline-desc">
+                            Acquired hands-on practical experience in the fundamentals of full-stack web applications, integrating UI wireframing and design prototyping using Canva with clean, responsive code.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tech-tag">Full Stack Development</span>
+                            <span class="tech-tag">Canva Design</span>
+                            <span class="tech-tag">UI/UX Principles</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section (Strictly from Resume) -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <span class="section-tag">Portfolio Showcase</span>
+                <h2 class="section-title">Key Engineering Projects</h2>
+                <div class="title-bar"></div>
+                <p class="section-subtitle">Showcasing end-to-end full-stack architectures and cutting-edge conceptual systems.</p>
+            </div>
+
+            <div class="projects-container">
+                <!-- Project 1: AI-Driven Train Induction Planning System (SIH) -->
+                <div class="project-featured-card">
+                    <div class="project-header">
+                        <div class="project-tag-wrapper">
+                            <span class="badge-sih">Smart India Hackathon (SIH)</span>
+                            <span class="badge-featured">Full-Stack Enterprise</span>
+                        </div>
+                        <h3 class="project-name">AI-Driven Train Induction Planning System</h3>
+                    </div>
+
+                    <p class="project-lead">
+                        A full-stack, enterprise-grade decision-support system designed to automate metro fleet induction using an explainable, rule-based scoring engine with secure authentication and comprehensive audit trails.
+                    </p>
+
+                    <div class="project-highlights-grid">
+                        <div class="proj-highlight">
+                            <strong>Rule-Based Scoring Engine:</strong> Explainable decision model prioritizing trains for scheduled maintenance and fleet scheduling.
+                        </div>
+                        <div class="proj-highlight">
+                            <strong>Security & Integrity:</strong> Role-based access control (RBAC), multi-user authentication, and tamper-resistant audit logs.
+                        </div>
+                        <div class="proj-highlight">
+                            <strong>Robust Full-Stack Pipeline:</strong> High-performance decoupled architecture connecting React frontend to Spring Boot microservices and MySQL storage.
+                        </div>
+                    </div>
+
+                    <div class="project-tech-stack">
+                        <span class="tech-pill">React</span>
+                        <span class="tech-pill">Spring Boot</span>
+                        <span class="tech-pill">MySQL</span>
+                        <span class="tech-pill">RESTful APIs</span>
+                        <span class="tech-pill">Rule Engine</span>
+                        <span class="tech-pill">Audit Trail</span>
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://github.com/manju-maharaja" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            <span>View on GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Neuro Hijacking with EEG Headset for Personalized 3D Hologram -->
+                <div class="project-featured-card">
+                    <div class="project-header">
+                        <div class="project-tag-wrapper">
+                            <span class="badge-research">Deep Tech / Concept System</span>
+                            <span class="badge-featured">AI & Cybersecurity</span>
+                        </div>
+                        <h3 class="project-name">Neuro Hijacking with EEG Headset for Personalized 3D Hologram</h3>
+                    </div>
+
+                    <p class="project-lead">
+                        Designed an innovative conceptual architecture utilizing electroencephalogram (EEG) brain signals and artificial intelligence to translate human thoughts into personalized 3D holograms, achieving controller-free human-machine interaction while formulating defense mechanisms against neuro-hijacking.
+                    </p>
+
+                    <div class="project-highlights-grid">
+                        <div class="proj-highlight">
+                            <strong>Controller-Free Thought Interaction:</strong> Real-time mapping of cognitive brainwave patterns to interactive 3D visual projection nodes.
+                        </div>
+                        <div class="proj-highlight">
+                            <strong>Neuro-Hijacking Countermeasures:</strong> Investigating data privacy safeguards and cryptographic verification to prevent unauthorized neural eavesdropping.
+                        </div>
+                        <div class="proj-highlight">
+                            <strong>AI Signal Processing:</strong> Applying machine learning feature extraction to filter noise from raw EEG streams.
+                        </div>
+                    </div>
+
+                    <div class="project-tech-stack">
+                        <span class="tech-pill">EEG Headset</span>
+                        <span class="tech-pill">Brain-Computer Interface (BCI)</span>
+                        <span class="tech-pill">Artificial Intelligence</span>
+                        <span class="tech-pill">3D Holography</span>
+                        <span class="tech-pill">Neuro-Security Protocols</span>
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://github.com/manju-maharaja" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            <span>View on GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Problem Solving & LeetCode Callout Card -->
+                <div class="project-featured-card dsa-showcase-card">
+                    <div class="project-header">
+                        <div class="project-tag-wrapper">
+                            <span class="badge-featured">Problem Solving</span>
+                        </div>
+                        <h3 class="project-name">Java Data Structures & Algorithmic Problem Solving</h3>
+                    </div>
+
+                    <p class="project-lead">
+                        Regularly practicing and sharpening data structures, algorithms, and logical problem-solving abilities on LeetCode using <strong>Java</strong> to master computational efficiency and code optimization.
+                    </p>
+
+                    <div class="dsa-profile-metrics">
+                        <div class="dsa-badge">
+                            <span class="dsa-title">Primary Platform</span>
+                            <span class="dsa-data">LeetCode</span>
+                        </div>
+                        <div class="dsa-badge">
+                            <span class="dsa-title">Profile Handle</span>
+                            <span class="dsa-data">Manju__M</span>
+                        </div>
+                        <div class="dsa-badge">
+                            <span class="dsa-title">Core Focus</span>
+                            <span class="dsa-data">Java Collections, Arrays, Sorting</span>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://leetcode.com/u/Manju__M/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.607 2.66 2.66 0 0 1 .388-.392l4.255-4.556a1.377 1.377 0 0 0 .004-1.954l-1.397-1.397a1.374 1.374 0 0 0-.987-.404zm3.626 7.422a1.38 1.38 0 0 0-.979.404l-4.125 4.125a1.38 1.38 0 0 0 0 1.954l4.125 4.125a1.38 1.38 0 0 0 1.954-1.954l-3.148-3.148 3.148-3.148a1.38 1.38 0 0 0-.974-2.358z"/></svg>
+                            <span>Inspect LeetCode Profile</span>
+                        </a>
+                        <a href="https://github.com/manju-maharaja" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                            <span>Browse GitHub Repositories</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <div class="section-header">
+                <span class="section-tag">Credentials</span>
+                <h2 class="section-title">Certifications & Honors</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="certifications-grid">
+                <!-- Cert 1: NPTEL Silver Elite -->
+                <div class="cert-card featured-cert">
+                    <div class="cert-badge-top">⭐ Silver Elite</div>
+                    <div class="cert-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                    </div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">NPTEL • Ministry of Education (Govt. of India)</span>
+                        <h3 class="cert-title">Programming in Java</h3>
+                        <p class="cert-details">
+                            Earned official certification in Java Programming with an outstanding examination score of <strong>83%</strong>, securing the prestigious <strong>Silver Elite</strong> classification.
+                        </p>
+                        <div class="cert-meta">
+                            <span class="meta-tag">Score: 83%</span>
+                            <span class="meta-tag">Grade: Silver Elite</span>
+                            <span class="meta-tag">Year: 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 2: NxtLogic Solutions -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">NxtLogic Solutions</span>
+                        <h3 class="cert-title">Web Development Internship Certificate</h3>
+                        <p class="cert-details">
+                            Certified completion of industrial training program entitled "Web Development", validating practical front-end engineering competencies.
+                        </p>
+                        <div class="cert-meta">
+                            <span class="meta-tag">Internship</span>
+                            <span class="meta-tag">Year: 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 3: Pantech Solutions -->
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <div class="cert-body">
+                        <span class="cert-issuer">Pantech Solutions</span>
+                        <h3 class="cert-title">Full Stack Web Development & Canva Design</h3>
+                        <p class="cert-details">
+                            Credential recognizing foundational expertise in end-to-end full-stack development methodologies and visual Canva interface design.
+                        </p>
+                        <div class="cert-meta">
+                            <span class="meta-tag">Full Stack</span>
+                            <span class="meta-tag">Year: 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="section-header">
+                <span class="section-tag">Academic Background</span>
+                <h2 class="section-title">Education</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="education-grid">
+                <!-- B.E. Degree -->
+                <div class="edu-card active-degree">
+                    <div class="edu-header">
+                        <span class="edu-period">2024 – 2028 (Ongoing)</span>
+                        <span class="edu-status">B.E. Degree</span>
+                    </div>
+                    <h3 class="edu-degree">B.E. in Computer Science and Engineering</h3>
+                    <h4 class="edu-institution">V.S.B. College of Engineering Technical Campus, Coimbatore</h4>
+                    <div class="edu-score-box">
+                        <span class="score-label">Current Academic Standing:</span>
+                        <span class="score-val">CGPA: 8.32 / 10</span>
+                    </div>
+                    <p class="edu-notes">
+                        Rigorous coursework in Data Structures, Object-Oriented Programming, Database Management Systems, Computer Networks, and Software Engineering.
+                    </p>
+                </div>
+
+                <!-- Higher Secondary (Class XII) -->
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <span class="edu-period">Completed: March 2024</span>
+                        <span class="edu-status">Class XII</span>
+                    </div>
+                    <h3 class="edu-degree">Higher Secondary Examination (HSC)</h3>
+                    <h4 class="edu-institution">Swamy Chidbhavananda Matriculation Higher Secondary School, Coimbatore</h4>
+                    <div class="edu-score-box">
+                        <span class="score-label">Final Board Score:</span>
+                        <span class="score-val">86.0%</span>
+                    </div>
+                    <p class="edu-notes">
+                        Focused on Mathematics, Physics, Chemistry, and Computer Science fundamentals.
+                    </p>
+                </div>
+
+                <!-- Secondary School (Class X) -->
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <span class="edu-period">Completed: May 2022</span>
+                        <span class="edu-status">Class X</span>
+                    </div>
+                    <h3 class="edu-degree">Secondary School Leaving Certificate (SSLC)</h3>
+                    <h4 class="edu-institution">Swamy Chidbhavananda Matriculation Higher Secondary School, Coimbatore</h4>
+                    <div class="edu-score-box">
+                        <span class="score-label">Final Board Score:</span>
+                        <span class="score-val">89.6%</span>
+                    </div>
+                    <p class="edu-notes">
+                        Comprehensive foundational academics with high distinction in Mathematics and Science.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="title-bar"></div>
+                <p class="section-subtitle">Interested in hiring me for Software Engineering roles or discussing opportunities? Reach out anytime!</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Direct Cards -->
+                <div class="contact-card-box">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="label">Email Address</span>
+                            <a href="mailto:manju18022007@gmail.com" class="val">manju18022007@gmail.com</a>
+                        </div>
+                        <button class="btn btn-sm btn-ghost copy-email-btn" data-email="manju18022007@gmail.com" title="Copy to clipboard">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                        </button>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="label">Mobile Number</span>
+                            <a href="tel:+919025925528" class="val">+91 90259 25528</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="label">Location</span>
+                            <span class="val">Coimbatore, Tamil Nadu, India</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-social-grid">
+                        <a href="https://www.linkedin.com/in/manju-m-36447a3a8/" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            <div>
+                                <div class="name">LinkedIn</div>
+                                <div class="handle">manju-m-36447a3a8</div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/manju-maharaja" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            <div>
+                                <div class="name">GitHub</div>
+                                <div class="handle">manju-maharaja</div>
+                            </div>
+                        </a>
+
+                        <a href="https://leetcode.com/u/Manju__M/" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .666-1.607 2.66 2.66 0 0 1 .388-.392l4.255-4.556a1.377 1.377 0 0 0 .004-1.954l-1.397-1.397a1.374 1.374 0 0 0-.987-.404zm3.626 7.422a1.38 1.38 0 0 0-.979.404l-4.125 4.125a1.38 1.38 0 0 0 0 1.954l4.125 4.125a1.38 1.38 0 0 0 1.954-1.954l-3.148-3.148 3.148-3.148a1.38 1.38 0 0 0-.974-2.358z"/></svg>
+                            <div>
+                                <div class="name">LeetCode</div>
+                                <div class="handle">Manju__M</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Recruiter Quick Message Form -->
+                <div class="contact-form-box">
+                    <h3>Send a Direct Message</h3>
+                    <p>Have an internship or job opportunity? Send a quick message straight to my inbox.</p>
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Your Name / Organization</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. Talent Acquisition @ TechCorp" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="e.g. recruiter@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="e.g. Software Engineer Role / SDE Opportunity" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Hello Manju, we came across your portfolio and would like to discuss..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            <span>Send Message via Email</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">&lt;Manju.M /&gt;</div>
+                <p>Aspiring Software Engineer • Committed to engineering impactful software solutions.</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p class="copyright">© 2026 Manju M. All rights reserved.</p>
+            </div>
         </div>
-
-    </section>
-
-
-    <!-- Contact -->
-    <section id="contact">
-
-        <h2>Contact Me</h2>
-
-        <p>Email: manju18022007@gmail.com</p>
-
-        <p>
-            GitHub:
-            <a href="https://github.com/manju-maharaja" target="_blank">https://github.com/manju-maharaja</a>
-        </p>
-
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/manju-m-36447a3a8/" target="_blank">https://www.linkedin.com/in/manju-m-36447a3a8/</a>
-        </p>
-
-        <p>
-            Leetcode:
-            <a href="https://leetcode.com/u/Manju__M/" target="_blank">https://leetcode.com/u/Manju__M/</a>
-
-        </p>
-
-    </section>
-
-
-    <footer>
-        <p>© 2026 Manju M</p>
     </footer>
 
+    <!-- Toast Notification for Copy to Clipboard -->
+    <div id="toast" class="toast">Email copied to clipboard!</div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
 
     <script src="script.js"></script>
-
 </body>
 </html>
